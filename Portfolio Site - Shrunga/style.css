@@ -1,0 +1,55 @@
+/*
+Colors used:
+Main Color 1 (Dark Grey): #707070;
+Main Color 2 (Grey): #E4E4E4;
+Main Color 3 (Red) : #D61212;
+Secondary Color 1 (Light Grey): #F5F5F5;
+Secondary Color 2 (Light Red): #FE7C7C;
+Secondary Color 3 (Light Pink ) : #FFCCCC
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 160px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 5.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+<style>
+.button {
+  background-color:#D61212;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
