@@ -1,3 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Reseting the browsers default */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /*
 Colors used:
 Main Color 1 (Dark Grey): #707070;
@@ -9,49 +141,101 @@ Secondary Color 3 (Light Pink ) : #FFCCCC
 */
 
 body {
-  background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+    background-color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  color: #707070;
+    font-size: 2.75em;
+    font-weight: 700;
+    color: #707070;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  color:#D61212
+    font-size: 2.25em;
+    font-weight: 700;
+    color: #d61212;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  color: #707070;
+    font-size: 1.75em;
+    font-weight: 400;
+    color: #707070;
 }
 h4 {
-  font-size: 1.35em;
-  font-weight: 400;
-  color:#D61212
+    font-size: 1.35em;
+    font-weight: 400;
+    color: #d61212;
 }
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .background {
-  background-color: #707070;
-  color: #F5F5F5;
+    background-color: #707070;
+    color: #f5f5f5;
 }
 
 #Getintouchcolor {
-  color:#FFCCCC;
+    color: #ffcccc;
+}
+a {/* Added New Styles */
+    color: #D61212;
+    text-decoration: none; /* No underlining */
+}
+
+
+a:hover, /* hover over link */
+a:focus {
+    color: #F5F5F5;
+    text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+
+a:visited {/* visited link */
+    color: #E4E4E4;
+}
+a:active {
+    /* selected link */
+    color: #FFCCCC;
+}
+
+.button {
+    /* button styles */
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #FE7C7C;
+    color: #F5F5F5; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #FFCCCC; /* width of the border, type, color */
+    transition: 0.2s opacity;
+}
+.button:hover,
+.button:focus {
+    /* button hover styles */
+    opacity: 0.4; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+}
+
+
+
+/* Layout styling */
+
+.container {
+  padding: 15 15px;
 }
