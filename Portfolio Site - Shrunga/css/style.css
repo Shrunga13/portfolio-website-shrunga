@@ -181,6 +181,8 @@ h4 {
     font-size: 1.35em;
     font-weight: 400;
     color: #d61212;
+
+.font: {font size: 12px,}
 }
 img {
     width: 100%;
@@ -237,6 +239,7 @@ a:active {
 
 .container {
     padding: 0 15px;
+     text-align: center
 }
 
 .row {
@@ -248,8 +251,9 @@ a:active {
 }
 
 .social_logo svg {
-    width: 50px;
-    height: 50px;
+    width:30px;
+    height:30px;
+    padding:2px;
 }
 
 
