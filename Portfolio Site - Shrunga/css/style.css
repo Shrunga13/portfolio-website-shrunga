@@ -484,22 +484,3 @@ Extra-large devices (1920px or larger)
 
 
 /* javascript*/
-
-
-
-.navtoggle li:not(:last-child) {
-  display: none;
-}
-.navtoggle li:last-child {
-  display: none;
-}
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 0;
-}
