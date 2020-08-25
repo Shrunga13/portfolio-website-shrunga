@@ -103,10 +103,7 @@ footer,
 header,
 hgroup,
 menu,
-nav,
-section {
-    display: block;
-}
+
 body {
     line-height: 1;
 }
@@ -495,4 +492,14 @@ Extra-large devices (1920px or larger)
 }
 .navtoggle li:last-child {
   display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
 }
