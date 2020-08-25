@@ -208,7 +208,7 @@ a:focus {
 
 a:visited {
     /* visited link */
-    color: #f5f5f5;
+    color:#FE7C7C;
 }
 a:active {
     /* selected link */
@@ -283,9 +283,7 @@ nav > ul {
     background-color: #707070;
 }
 
-nav > ul > li {
-    display: inline-block;
-}
+
 
 nav > ul > li > a {
     padding: 0 15px;
@@ -406,7 +404,14 @@ Medium devices (640px and larger)
 }
 }
 
+nav > ul > li {
+    display: inline-block;
+}
 
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -476,4 +481,18 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
+}
+
+
+
+
+/* javascript*/
+
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle li:last-child {
+  display: none;
 }
