@@ -300,7 +300,7 @@ main {
 /* logo sizing*/
 
 .logo {
-    max-width: 250px;
+    max-width: 150px;
     display: inline-block;
     text-align: center;
     padding-bottom: 10px;
@@ -332,7 +332,7 @@ footer > div > a > svg {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
     .header {
         text-align: unset;
         padding: 20px 0 13px;
