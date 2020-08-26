@@ -219,7 +219,7 @@ a:active {
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
-  margin top: 10px;
+  margin top:10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   transition-duration: 0.2s;
@@ -336,13 +336,15 @@ nav > ul > li {
   position: relative;
 }
 
+
 .navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-  padding-right: 10px;
-  padding-top: 75px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 30px;
+    padding-top: 75px;
+    color: red;
 }
 
 .navtoggle.responsive li  {
@@ -498,8 +500,16 @@ Large devices (1024px or larger)
           width: 33.3%;
         }
     }
-}
 
+    nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
 
 /* ==============================
 X-large devices (1440px or larger)
