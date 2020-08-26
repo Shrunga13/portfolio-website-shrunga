@@ -341,7 +341,12 @@ nav > ul > li {
   right: 0;
   top: 2px;
   font-size: 20px;
-  padding-right: 0;
+  padding-right: 10px;
+  padding-top: 75px;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 nav > ul {
   list-style-type: none;
@@ -351,6 +356,31 @@ nav > ul {
   margin: 1em 0;
 }
 
+main {
+  padding-top: 56px;
+}
+
+/*menuToggle*/
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 /* ==============================
 Medium devices (641px and larger)
 ================================= */
