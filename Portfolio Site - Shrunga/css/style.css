@@ -325,7 +325,7 @@ footer > div > a > svg {
 }
 
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (641px and larger)
 ================================= */
 @media only screen and (min-width: 641px) {
     .header {
@@ -368,6 +368,10 @@ Medium devices (640px and larger)
     .col-md-4{
       width: 33.3%;
     }
+
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
     /*Animation*/
     @keyframes color-change {
       0% {fill: #edc655;}
@@ -409,6 +413,10 @@ nav > ul > li {
 .navtoggle li:not(:last-child) {
   display: inline-block;
 }
+.navtoggle li:last-child {
+  display: none;
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -484,3 +492,9 @@ Extra-large devices (1920px or larger)
 
 
 /* javascript*/
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
