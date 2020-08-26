@@ -324,6 +324,33 @@ footer > div > a > svg {
     display: inline-block;
 }
 
+
+/* javascript*/
+nav > ul > li {
+  display: inline-block;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul {
+  margin: 1em 0;
+}
+
 /* ==============================
 Medium devices (641px and larger)
 ================================= */
@@ -369,9 +396,10 @@ Medium devices (641px and larger)
       width: 33.3%;
     }
 
-    .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    nav > ul > li {
+        display: inline-block;
+    }
+
     /*Animation*/
     @keyframes color-change {
       0% {fill: #edc655;}
@@ -403,18 +431,6 @@ Medium devices (641px and larger)
   .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-}
-
-nav > ul > li {
-    display: inline-block;
-}
-
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-.navtoggle li:last-child {
-  display: none;
 }
 
 /* ==============================
@@ -486,15 +502,4 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-}
-
-
-
-
-/* javascript*/
-nav > ul > li {
-  display: inline-block;
-}
-.navtoggle li:not(:last-child) {
-  display: none;
 }
